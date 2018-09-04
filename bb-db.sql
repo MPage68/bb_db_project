@@ -70,13 +70,13 @@ CREATE TABLE Yeast (
     AlcoholVol VARCHAR(4) 
 );
 
-CREATE TABLE ADDITIVE (
+CREATE TABLE Additive (
     ID INT PRIMARY KEY AUTO_INCREMENT,
     AdditiveID INT,
     Purpose VARCHAR(100)
 );
 
-CREATE TABLE MASH (
+CREATE TABLE Mash (
     ID INT PRIMARY KEY AUTO_INCREMENT,
     Duration VARCHAR(2.2),
     Temperature INT(3.2),
@@ -95,7 +95,7 @@ CREATE TABLE Boil (
     Additions VARCHAR(25) 
 );
 
-CREATE TABLE FERMENTATION (
+CREATE TABLE Fermentation (
     ID INT PRIMARY KEY AUTO_INCREMENT,
     YeastName INT,
     PitchRate INT,

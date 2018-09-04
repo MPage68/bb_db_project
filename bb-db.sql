@@ -3,7 +3,8 @@ CREATE DATABASE bb_db;
 USE bb_db;
 
 
-
+-- Data model layout works. 
+-- Need to develop a separate script to pass in table data.
  
 CREATE TABLE Grain (
     ID INT PRIMARY KEY AUTO_INCREMENT,
@@ -126,7 +127,7 @@ CREATE TABLE Recipe (
         REFERENCES Yeast (ID)
 );
 
-
+-- insert into table script will be a separate script. 
 
 -- create a user and grant privileges to that user
 -- GRANT SELECT, INSERT, DELETE, UPDATE

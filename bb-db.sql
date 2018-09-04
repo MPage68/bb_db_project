@@ -126,38 +126,6 @@ CREATE TABLE Recipe (
         REFERENCES Yeast (ID)
 );
 
-INSERT INTO RECIPE VALUES
-(1,'RHINEGIEST TRUTH CLONE','IPA','72.3','7.2','6.54','7','4','2','1'
-);
-
-INSERT INTO GRAIN VALUES
-(1,'Page 2 Row','30');
-
-INSERT INTO GRAIN_BILL VALUES
-(1,'2 ROW PALE MALT','AMERICAN VIENNA','CARA RED','0');
-
-INSERT INTO HOP VALUES 
-(1,'Citra','11','Intense citrus flavor');
-
-INSERT INTO HOP_PROFILE VALUES
-(1,'FIRSTWORT','HOP1','HOP2','HOP3','HOP4','DRY1','DRY2');
-
-INSERT INTO YEAST VALUES
-(1,'Wyeast 1056','American Ale','High','High','1million,gram','High');
-
-INSERT INTO ADDITIVE VALUES
-(1,'Yeast Nutrient','Used to promote growth of cell walls in yeast. Add at the last 15 minutes of the boil');
-
-INSERT INTO MASH VALUES
-(1,'60','1','2','3','4','5','6','7');
-
-INSERT INTO BOIL VALUES
-(1,'7','60','8');
-
-INSERT INTO FERMENTATION VALUES
-(1,'Wyeast 1056','1 Billion','High','68','10.58','10.10');
-
-
 
 
 -- create a user and grant privileges to that user

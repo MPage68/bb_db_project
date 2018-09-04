@@ -7,8 +7,8 @@ USE bb_db;
  
 CREATE TABLE Grain (
     ID INT PRIMARY KEY AUTO_INCREMENT,
-    GrainName VARCHAR(40) NOT NULL,
-    LoviBond VARCHAR(2.2) NOT NULL
+    GrainName VARCHAR(40),
+    LoviBond VARCHAR(2.2) 
 );
   
 CREATE TABLE GrainBill (
@@ -29,8 +29,8 @@ CREATE TABLE GrainBill (
   
 CREATE TABLE Hop (
     ID INT PRIMARY KEY AUTO_INCREMENT,
-    HopName VARCHAR(10) NOT NULL,
-    AlphaAcid VARCHAR(2.2) NOT NULL,
+    HopName VARCHAR(10),
+    AlphaAcid VARCHAR(2.2),
     Flavor VARCHAR(225)
 );
   
@@ -62,12 +62,12 @@ CREATE TABLE HopProfile (
 
 CREATE TABLE Yeast (
     ID INT PRIMARY KEY AUTO_INCREMENT,
-    YeastName VARCHAR(25) NOT NULL,
-    Style VARCHAR(12) NOT NULL,
-    Attenuation VARCHAR(4) NOT NULL,
-    Floculation VARCHAR(4) NOT NULL,
-    CellDesity VARCHAR(25) NOT NULL,
-    AlcoholVol VARCHAR(4) NOT NULL
+    YeastName VARCHAR(25),
+    Style VARCHAR(12),
+    Attenuation VARCHAR(4),
+    Floculation VARCHAR(4),
+    CellDesity VARCHAR(25),
+    AlcoholVol VARCHAR(4) 
 );
 
 CREATE TABLE ADDITIVE (
@@ -78,21 +78,21 @@ CREATE TABLE ADDITIVE (
 
 CREATE TABLE MASH (
     ID INT PRIMARY KEY AUTO_INCREMENT,
-    Duration VARCHAR(2.2) NOT NULL,
-    Temperature INT(3.2) NOT NULL,
-    StikeTemp INT(3.2) NOT NULL,
-    StrikeVolume INT(2.2) NOT NULL,
-    SpargeTemp INT(3.2) NOT NULL,
-    SpargeVolume INT(2.2) NOT NULL,
-    MashOutVolume INT(2.2) NOT NULL,
-    MashThickness INT(1.2) NOT NULL
+    Duration VARCHAR(2.2),
+    Temperature INT(3.2),
+    StikeTemp INT(3.2),
+    StrikeVolume INT(2.2),
+    SpargeTemp INT(3.2),
+    SpargeVolume INT(2.2),
+    MashOutVolume INT(2.2),
+    MashThickness INT(1.2) 
 );
 
 CREATE TABLE Boil (
     ID INT PRIMARY KEY AUTO_INCREMENT,
-    WortVolume INT(2.2) NOT NULL,
-    Duration VARCHAR(2.2) NOT NULL,
-    Additions VARCHAR(25) NOT NULL
+    WortVolume INT(2.2),
+    Duration VARCHAR(2.2),
+    Additions VARCHAR(25) 
 );
 
 CREATE TABLE FERMENTATION (
@@ -106,8 +106,8 @@ CREATE TABLE FERMENTATION (
 );
 
 CREATE TABLE Recipe (
-    ID INT PRIMARY KEY AUTO_INCREMENT,
-    Recipe_Name VARCHAR(100) NOT NULL UNIQUE,
+    ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    Recipe_Name VARCHAR(100),
     STYLE VARCHAR(12),
     IBU INT(3.2),
     ABV INT(2.1),
